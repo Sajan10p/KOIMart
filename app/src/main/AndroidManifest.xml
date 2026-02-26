@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="KOI Mart"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KOIMart">
+
+
+        <activity android:name=".ui.ProfileActivity"/>
+        <activity android:name=".ui.PurchaseHistoryActivity" />
+        <activity android:name=".ui.CheckoutActivity" />
+        <activity android:name=".ui.CartActivity" />
+        <activity android:name=".ui.SearchActivity" />
+        <activity android:name=".ui.ProductDetailActivity" />
+        <activity android:name=".ui.HomeActivity" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
